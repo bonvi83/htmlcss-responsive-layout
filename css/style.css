@@ -11,7 +11,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -145,6 +144,22 @@ header > .container > nav {
 }
 
 
+/* sezione 6 card bianche su sfondo violetto */
+
+#benefits {
+    background-color: var(--primary-color);
+}
+
+#benefits > .container > .row > .col > .card {
+    display: flex;
+/* da sistemare la disposizione del contenuto */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    background-color: white;
+}
+
+
 /* MEDIA QUERY TABLET*/
 
 @media screen and (max-width: 768px) {
@@ -163,7 +178,7 @@ header > .container > nav {
 }
 
 
-/* MEDIA QUERY PHONE*/s
+/* MEDIA QUERY PHONE*/
 
 @media screen and (max-width: 480px) {
     #demoapp .col:first-child, 
