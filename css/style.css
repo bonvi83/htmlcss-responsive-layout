@@ -148,6 +148,7 @@ header > .container > nav {
 
 #benefits {
     background-color: var(--primary-color);
+    text-align: center;
 }
 
 #benefits > .container > .row > .col > .card {
@@ -158,6 +159,47 @@ header > .container > nav {
     width: 100%;
     background-color: white;
 }
+
+
+/* sezione about */
+
+#about {
+    display: flex;
+}
+
+#about > .about-left,
+#about > .about-right {
+/* da sistemare la disposizione del contenuto */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+}
+
+#get-started {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+
+
+
+/* sezione get started */
+
+
+
+
+
+/* sezione footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+
 
 
 /* MEDIA QUERY TABLET*/
