@@ -1,6 +1,7 @@
 :root {
-    --primary-color:  rgb(116, 64, 116);
-    --secondary-color:  rgb(21, 233, 233);
+    --primary-color:  rgb(151, 146, 228);
+    --secondary-color:  rgb(181, 221, 255);
+    --header-color: rgb(0, 132, 253);
 }
 
 /* funzioni reset */
@@ -32,11 +33,41 @@ a {
     color: black;
 }
 
+/* griglia */
+
+.container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col"] {
+    padding: 1rem;
+}
+
+
+/* UTILS */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 
 /* HEADER */
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--header-color);
     color: white;
 }
 
@@ -52,6 +83,29 @@ header > .container > .logo,
 header > .container > nav {
     padding: 25px;
     background-color: blue;
-
     border: 3px solid black;
+}
+
+#demoapp .col {
+    width: calc(100% / 3);
+}
+
+
+
+#demoapp .col:first-child {
+    width: calc(100% / 3 * 2);
+}
+
+#demoapp .col:first-child .card {
+    display: flex;
+}
+
+
+.col {
+    padding: 1rem;
+}
+
+#demoapp .card {
+    background-color: var(--secondary-color);
+    padding: 1rem;
 }
