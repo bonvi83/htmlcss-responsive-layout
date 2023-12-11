@@ -57,11 +57,11 @@ a {
 
 /* UTILS */
 
-.clearfix::after {
+/* .clearfix::after {
     content: '';
     display: block;
     clear: both;
-}
+} */
 
 
 /* HEADER */
@@ -84,6 +84,9 @@ header > .container > nav {
     background-color: blue;
     border: 3px solid black;
 }
+
+
+/* sezione 5 card azzurre */
 
 #demoapp .col {
     width: calc(100% / 3);
@@ -113,17 +116,40 @@ header > .container > nav {
 }
 
 
+/* sezione con sole due card */
+
+#strategic {
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+
+/* sezione 3 card viola */
+
+#testimonial {
+
+}
+
+
 /* MEDIA QUERY TABLET*/
 
 @media screen and (max-width: 768px) {
     #demoapp .col:first-child .card-left,
     #demoapp .col:first-child .card-right {
         width: 100%;
+        /* non funziona il wrap, come mai? IL COLORE OVVIAMENTE FUNZIONA */
+        flex-wrap: wrap;
+        color: green;
+    }
+
+    /* nemmeno questo funziona */
+    #demoapp .col:first-child {
+        flex-wrap: wrap;
     }
 }
 
 
-/* MEDIA QUERY PHONE*/
+/* MEDIA QUERY PHONE*/s
 
 @media screen and (max-width: 480px) {
     #demoapp .col:first-child, 
