@@ -76,7 +76,6 @@ header > .container {
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
-
 }
 
 header > .container > .logo,
@@ -90,8 +89,6 @@ header > .container > nav {
     width: calc(100% / 3);
 }
 
-
-
 #demoapp .col:first-child {
     width: calc(100% / 3 * 2);
 }
@@ -100,6 +97,10 @@ header > .container > nav {
     display: flex;
 }
 
+#demoapp .col:first-child .card-left,
+#demoapp .col:first-child .card-right  {
+    width: 50%;
+}
 
 .col {
     padding: 1rem;
@@ -108,4 +109,25 @@ header > .container > nav {
 #demoapp .card {
     background-color: var(--secondary-color);
     padding: 1rem;
+    height: 100%;
+}
+
+
+/* MEDIA QUERY TABLET*/
+
+@media screen and (max-width: 768px) {
+    #demoapp .col:first-child .card-left,
+    #demoapp .col:first-child .card-right {
+        width: 100%;
+    }
+}
+
+
+/* MEDIA QUERY PHONE*/
+
+@media screen and (max-width: 480px) {
+    #demoapp .col:first-child, 
+    #demoapp .col {
+        width: 100%;
+    }
 }
