@@ -127,7 +127,21 @@ header > .container > nav {
 /* sezione 3 card viola */
 
 #testimonial {
+    text-align: center;
+}
 
+#testimonial > .container > .row {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonial > .container > .row > .col > .card {
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    background-color: var(--primary-color);
 }
 
 
