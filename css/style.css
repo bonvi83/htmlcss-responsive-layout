@@ -29,7 +29,7 @@ li {
 
 a {
     text-decoration: inherit;
-    color: black;
+    color: white;
 }
 
 /* griglia */
@@ -84,6 +84,10 @@ header > .container > nav {
     border: 3px solid black;
 }
 
+nav {
+    align-items: center;
+    justify-content: center;
+}
 
 /* sezione 5 card azzurre */
 
@@ -128,6 +132,14 @@ header > .container > nav {
     background-color: var(--primary-color);
 }
 
+.ridimg {
+    width: 300px;
+}
+
+.ridimg2 {
+    width: 250px;
+}
+
 
 /* sezione 3 card viola */
 
@@ -149,6 +161,10 @@ header > .container > nav {
     background-color: var(--primary-color);
 }
 
+#testimonial > .container > .row > .col > .card {
+    color: white;
+}
+
 
 /* sezione 6 card bianche su sfondo violetto */
 
@@ -158,12 +174,19 @@ header > .container > nav {
 }
 
 #benefits > .container > .row > .col > .card {
-    display: flex;
+    /* display: flex; */
 /* da sistemare la disposizione del contenuto */
     padding-left: 3rem;
     padding-right: 3rem;
     width: 100%;
     background-color: white;
+}
+
+.botmore {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20%;
+    padding: 8px;
 }
 
 
