@@ -80,7 +80,6 @@ header > .container {
 header > .container > .logo,
 header > .container > nav {
     padding: 25px;
-    background-color: blue;
     border: 3px solid black;
 }
 
@@ -165,6 +164,10 @@ nav {
     color: white;
 }
 
+.fototessera {
+    width: 400px;
+}
+
 
 /* sezione 6 card bianche su sfondo violetto */
 
@@ -174,7 +177,6 @@ nav {
 }
 
 #benefits > .container > .row > .col > .card {
-    /* display: flex; */
 /* da sistemare la disposizione del contenuto */
     padding-left: 3rem;
     padding-right: 3rem;
@@ -209,6 +211,9 @@ nav {
     background-color: var(--primary-color);
 }
 
+.fototessera2 {
+    width: 200px;
+}
 
 
 
@@ -247,6 +252,9 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+
+
 
 
 /* MEDIA QUERY PHONE*/
