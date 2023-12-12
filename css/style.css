@@ -114,6 +114,12 @@ header > .container > nav {
     height: 100%;
 }
 
+#bottblu {
+    background-color: blue;
+    color: white;
+    border-radius: 20%;
+    padding: 8px;
+}
 
 /* sezione con sole due card */
 
